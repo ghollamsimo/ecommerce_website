@@ -9,6 +9,7 @@ import CartItem from '../components/CartItem'
 import {SidebarContext} from '../contexts/SidebarContext'
 // 
 import { CartContext } from '../contexts/CartContext';
+import '../index.css'
 
 const Sidebar = () => {
   const {isOpen, handleClose} = useContext(SidebarContext)
@@ -39,7 +40,7 @@ const Sidebar = () => {
           </div>
       </div>
       
-      <Link to='/' className='bg-primary flex p-4 justify-center items-center text-white w-full font-medium rounded-xl'>
+      <Link to='/' className='btn41-43 btn-41 flex p-4 justify-center items-center w-full font-medium'>
         Checkout
       </Link>
     </div>

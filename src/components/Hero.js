@@ -1,6 +1,7 @@
 import React from 'react';
 import WOMAN from '../img/woman_hero.png'
 import { Link } from 'react-router-dom';
+import '../index.css'
 
 const Hero = () => {
   return <section className=' h-[800px] bg-hero bg-no-repeat bg-cover bg-center py-24'>
@@ -16,7 +17,7 @@ const Hero = () => {
       AUTUMN SALE STYLISH <br />
       <span className='font-semibold'>WOMANS</span>
     </h1>
-    <Link to={'/'} className="self-start uppercase font-semibold border-b-2 border-primary">Discover More</Link>
+    <Link to={'/'} className="unederline  self-start uppercase font-semibold border-primary">Discover More</Link>
     </div>
     <div className='hidden lg:block'>
           <img src={WOMAN} alt="" />

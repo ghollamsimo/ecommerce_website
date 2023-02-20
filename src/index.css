@@ -7,3 +7,75 @@
     @apply font-primary text-primary;
   }
 }
+
+.btn41-43 {
+  padding: 10px 35px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  outline: none !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.btn-41 {
+  border: 1px solid #222222;
+  z-index: 1;
+  color: rgb(0, 0, 0);
+}
+
+.btn-41:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  background: #222222;
+  transition: all 0.3s ease;
+}
+
+.btn-41:hover {
+  color: rgb(255, 255, 255);
+}
+
+.btn-41:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+
+.btn-41:active {
+  top: 2px;
+}
+/* underline */
+a{
+  text-decoration: none;
+}
+.unederline{
+  position: relative;
+}
+
+.unederline::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 1px;
+  background-color: #000000;
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .unederline:hover::before{
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}

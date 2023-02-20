@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom';
 import {CartContext} from'../contexts/CartContext'
 // produtc context
 import {PorductContext, ProductContext} from'../contexts/ProductContext'
+import '../index.css'
 
 const ProductDetails = () => {
   const {id} =useParams()
@@ -36,7 +37,7 @@ const ProductDetails = () => {
             <div className='text-xl  text-red-500 font-medium mb-6'>${price}</div>
             
               <p className='mb-8'>{description}</p>
-              <button onClick={() => addToCart(product, product.id)} className='bg-primary py-4 px-8  text-white rounded-xl'>Add to Cart</button>
+              <button onClick={() => addToCart(product, product.id)} className='btn41-43 btn-41 py-4 px-8 '>Add to Cart</button>
             
          </div>
       </div>
